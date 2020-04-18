@@ -1,12 +1,12 @@
 {
-  "name": "plugin",
-  "description": "An Aurelia 2 client application.",
+  "name": "@aurelia-toolbelt/plugin",
   "version": "0.1.0",
+  "description": "Aurelia toolbelt component set.",
   "repository": {
     "type": "git",
-    "url": "???"
+    "url": "https://github.com/aurelia-toolbelt/vNext"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "dependencies": {
     "aurelia": "dev"
   },
@@ -54,5 +54,8 @@
     "lint:js": "tslint --project tsconfig.json",
     "test:headless": "browser-do --mocha < dist/entry-bundle.js",
     "test:chrome": "browser-do --mocha --browser chrome < dist/entry-bundle.js"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
