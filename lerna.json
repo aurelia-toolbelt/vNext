@@ -7,5 +7,5 @@
       "hoist": "**"
     }
   },
-  "packages": ["packages/plugin"]
+  "packages": ["packages/*"]
 }
