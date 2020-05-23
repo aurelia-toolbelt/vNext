@@ -5,7 +5,7 @@ import { MyApp } from './my-app';
 // However, css files imported in other js/ts files are processed by style-loader.
 // import shared from './shared.scss';
 
-import * as BootstrapComponents from '@aurelia-toolbelt/plugin';
+import * as BootstrapComponents from '@aurelia-toolbelt/bootstrap-v4';
 
 Aurelia
   /*
