@@ -1,5 +1,5 @@
 {
-  "name": "@aurelia-toolbelt/plugin",
+  "name": "@aurelia-toolbelt/vanilla",
   "version": "0.1.0",
   "description": "Aurelia toolbelt component set.",
   "repository": {
@@ -8,7 +8,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "aurelia": "dev"
+    "aurelia": "dev",
+	"@aurelia-toolbelt/core": "0.1.0"
   },
   "devDependencies": {
     "@aurelia/testing": "dev",
