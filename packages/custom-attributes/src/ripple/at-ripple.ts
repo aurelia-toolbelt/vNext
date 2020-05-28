@@ -2,12 +2,15 @@ import { customAttribute, inject } from "aurelia";
 
 @customAttribute({ name: 'at-ripple' })
 @inject(Element)
-export class RippleEffect {
+export class RippleCustomAttribute {
     constructor(private element: Element) {
+
     }
 
     afterAttach() {
-        (<HTMLElement>this.element).addEventListener('mousedown', function (e) {
+        let htmlElement = this.element as HTMLElement;
+        htmlElement.setAttribute('data-animation', 'ripple');
+        htmlElement.addEventListener('mousedown', function (e) {
             const x = e.pageX - this.offsetLeft;
             const y = e.pageY - this.offsetTop;
             const w = this.offsetWidth.toString();

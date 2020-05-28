@@ -1,7 +1,7 @@
-/* [data-ripple] {
+[data-animation] {
     position: relative;
     overflow: hidden;
-} */
+}
 
 .ripple {
     width: 2px;
