@@ -6,12 +6,14 @@ export interface IBootstrapOptions {
     enableRippleEffect?: boolean;
     enableCssReboot?: boolean;
     defaultSize?: BootstrapSize;
+    enableLogging?: boolean;
     inputOptions?: IBootstrapInputOptions;
 };
 
 const defaultOptions: IBootstrapOptions = {
     enableRippleEffect: false,
     enableCssReboot: false,
+    enableLogging: false,
     defaultSize: BootstrapSize.Medium,
     inputOptions: {
         floatLabel: false
