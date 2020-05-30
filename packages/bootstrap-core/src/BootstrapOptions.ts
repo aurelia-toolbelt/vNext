@@ -3,14 +3,14 @@ import { BootstrapSize } from "./BootstrapSize";
 export interface IBootstrapOptions {
     enableRippleEffect: boolean;
     // enableFloatLabel: boolean;
-    enableReboot: boolean;
+    enableCssReboot: boolean;
     defaultSize: BootstrapSize
 };
 
 const defaultOptions: IBootstrapOptions = {
     enableRippleEffect: false,
     // enableFloatLabel: false,
-    enableReboot: false,
+    enableCssReboot: false,
     defaultSize: BootstrapSize.Medium
 };
 
