@@ -1,5 +1,6 @@
 import { DI, IContainer, Registration } from '@aurelia/kernel';
 import { BootstrapSize } from "./BootstrapSize";
+import { IBootstrapInputOptions } from './BootstrapInputOptions';
 
 export interface IBootstrapOptions {
     enableRippleEffect?: boolean;
@@ -7,10 +8,6 @@ export interface IBootstrapOptions {
     defaultSize?: BootstrapSize;
     inputOptions?: IBootstrapInputOptions;
 };
-
-export interface IBootstrapInputOptions {
-    floatLabel?: boolean;
-}
 
 const defaultOptions: IBootstrapOptions = {
     enableRippleEffect: false,
