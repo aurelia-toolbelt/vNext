@@ -1,3 +1,4 @@
+import { DI, IContainer, Registration } from '@aurelia/kernel';
 import { BootstrapSize } from "./BootstrapSize";
 
 export interface IBootstrapOptions {
@@ -21,7 +22,7 @@ export const Bootstrap = {
         return {
             register(container: IContainer) {
                 const settings = { ...defaultOptions, ...options };
-                return container.register(Registration.instance(IBootstrapOptions, settings);
+                return container.register(Registration.instance(IBootstrapOptions, settings));
             },
         };
     },
