@@ -1,5 +1,5 @@
 {
-  "name": "@aurelia-toolbelt/bootstrap-v4-plus",
+  "name": "@aurelia-toolbelt/bootstrap-core",
   "version": "0.1.0",
   "description": "Aurelia toolbelt component set.",
   "repository": {
@@ -8,11 +8,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "aurelia": "dev",
-    "@aurelia-toolbelt/bootstrap-core": "0.1.0"
+    "aurelia": "dev"
   },
   "devDependencies": {
-    "@aurelia/testing": "dev",
     "htmlhint": "^0.11.0",
     "sass-lint": "^1.0.0",
     "browser-do": "^2.0.0",
@@ -27,7 +25,6 @@
     "to-string-loader": "^1.0.0",
     "style-loader": "^1.0.0",
     "css-loader": "^3.0.0",
-    "@aurelia/webpack-loader": "dev",
     "ts-loader": "^6.0.0",
     "sass-loader": "^8.0.0",
     "sass": "^1.0.0",
@@ -42,9 +39,7 @@
     "@types/mocha": "^7.0.0"
   },
   "scripts": {
-    "lint:css": "sass-lint -c .sass-lint.yml \"src/**/*.scss\"",
-    "lint:html": "htmlhint -c .htmlhintrc src",
-    "lint": "npm run lint:js && npm run lint:html && npm run lint:css",
+    "lint": "npm run lint:js",
     "test": "npm run test:headless",
     "pretest": "npm run lint && npm run build:test",
     "start": "webpack-dev-server",
