@@ -2,17 +2,23 @@ import { DI, IContainer, Registration } from '@aurelia/kernel';
 import { BootstrapSize } from "./BootstrapSize";
 
 export interface IBootstrapOptions {
-    enableRippleEffect: boolean;
-    // enableFloatLabel: boolean;
-    enableCssReboot: boolean;
-    defaultSize: BootstrapSize
+    enableRippleEffect?: boolean;
+    enableCssReboot?: boolean;
+    defaultSize?: BootstrapSize;
+    inputOptions?: IBootstrapInputOptions;
 };
+
+export interface IBootstrapInputOptions {
+    floatLabel?: boolean;
+}
 
 const defaultOptions: IBootstrapOptions = {
     enableRippleEffect: false,
-    // enableFloatLabel: false,
     enableCssReboot: false,
-    defaultSize: BootstrapSize.Medium
+    defaultSize: BootstrapSize.Medium,
+    inputOptions: {
+        floatLabel: false
+    }
 };
 
 export const IBootstrapOptions = DI.createInterface<IBootstrapOptions>('IBootstrapOptions').noDefault();
