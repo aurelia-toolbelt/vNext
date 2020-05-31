@@ -9,10 +9,14 @@
   "license": "MIT",
   "dependencies": {
     "aurelia": "dev",
-    "@aurelia-toolbelt/bootstrap-core": "0.1.0"
+    "@aurelia-toolbelt/bootstrap-core": "0.1.0",
+    "bootstrap": "4.5.0",
+    "jquery": "3.5.1"
   },
   "devDependencies": {
     "@aurelia/testing": "dev",
+    "@types/bootstrap": "4.5.0",
+    "@types/jquery": "3.3.38",
     "htmlhint": "^0.11.0",
     "sass-lint": "^1.0.0",
     "browser-do": "^2.0.0",
