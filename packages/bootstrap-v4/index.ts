@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import { BootstrapV4Configuration } from '@aurelia-toolbelt/bootstrap-core';
 import Aurelia, { JitHtmlBrowserConfiguration } from 'aurelia';
 // import 'jquery/dist/jquery.js';
