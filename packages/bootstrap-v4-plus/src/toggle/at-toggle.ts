@@ -1,7 +1,7 @@
 import { customElement } from "aurelia";
-import template from './at-alert.html';
+import template from './at-toggle.html';
 
-@customElement({name: 'at-alert', template })
-export class BootstrapAlert{
+@customElement({name: 'at-toggle', template })
+export class BootstrapToggle{
 
 }
