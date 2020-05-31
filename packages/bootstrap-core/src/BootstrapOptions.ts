@@ -23,12 +23,11 @@ const defaultOptions: IBootstrapOptions = {
 export const IBootstrapOptions = DI.createInterface<IBootstrapOptions>('IBootstrapOptions').noDefault();
 
 export const BootstrapV4Configuration = {
-    customize(options?: IBootstrapOptions) {
-        options = options || {};
+    customize(options: IBootstrapOptions) {
         return {
             register(container: IContainer) {
                 const settings = { ...defaultOptions, ...options };
-                return Registration.instance(IBootstrapOptions, settings).register(container);
+                return container.register(Registration.instance(IBootstrapOptions, settings));
             },
         };
     },

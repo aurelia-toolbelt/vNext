@@ -3,5 +3,5 @@ import { BootstrapV4Configuration } from '@aurelia-toolbelt/bootstrap-core';
 import Aurelia, { JitHtmlBrowserConfiguration } from 'aurelia';
 // import 'jquery/dist/jquery.js';
 // import 'bootstrap/dist/js/bootstrap.bundle.js';
-Aurelia.register(BootstrapV4Configuration.customize(), JitHtmlBrowserConfiguration);
+Aurelia.register(BootstrapV4Configuration.customize({}), JitHtmlBrowserConfiguration);
 export * from './src';
