@@ -9,7 +9,9 @@
   "license": "MIT",
   "dependencies": {
     "aurelia": "dev",
-    "@aurelia-toolbelt/bootstrap-v4": "0.1.0"
+    "@aurelia-toolbelt/bootstrap-v4": "0.1.0",
+    "@aurelia-toolbelt/bootstrap-core": "0.1.0"
+
   },
   "devDependencies": {
     "htmlhint": "^0.11.0",

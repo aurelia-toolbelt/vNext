@@ -1,4 +1,7 @@
-import Aurelia, { RouterConfiguration/*, StyleConfiguration*/ } from 'aurelia';
+import Aurelia, {
+  RouterConfiguration,/*, StyleConfiguration*/
+  JitHtmlBrowserConfiguration
+} from 'aurelia';
 import { MyApp } from './my-app';
 // Css files imported in this main file are NOT processed by style-loader
 // They are for sharedStyles in shadowDOM.
@@ -6,6 +9,7 @@ import { MyApp } from './my-app';
 // import shared from './shared.scss';
 
 import * as BootstrapV4Components from '@aurelia-toolbelt/bootstrap-v4';
+// import { BootstrapConfig } from '@aurelia-toolbelt/bootstrap-core';
 
 Aurelia
   /*
@@ -14,7 +18,7 @@ Aurelia
     sharedStyles: [shared]
   }))
   */
-  .register(RouterConfiguration, BootstrapV4Components)
+  .register(RouterConfiguration, BootstrapV4Components, JitHtmlBrowserConfiguration)
   // To use HTML5 pushState routes, replace previous line with the following
   // customized router config.
   // .register(RouterConfiguration.customize({ useUrlFragmentHash: false }))
