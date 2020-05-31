@@ -5,7 +5,7 @@ import { MyApp } from './my-app';
 // However, css files imported in other js/ts files are processed by style-loader.
 // import shared from './shared.scss';
 
-import * as BootstrapComponents from '@aurelia-toolbelt/bootstrap-v4';
+import * as BootstrapV4Components from '@aurelia-toolbelt/bootstrap-v4';
 
 Aurelia
   /*
@@ -14,7 +14,7 @@ Aurelia
     sharedStyles: [shared]
   }))
   */
-  .register(RouterConfiguration, BootstrapComponents)
+  .register(RouterConfiguration, BootstrapV4Components)
   // To use HTML5 pushState routes, replace previous line with the following
   // customized router config.
   // .register(RouterConfiguration.customize({ useUrlFragmentHash: false }))
