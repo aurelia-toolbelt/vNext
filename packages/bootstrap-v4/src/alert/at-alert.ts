@@ -4,7 +4,10 @@ import { IBootstrapOptions } from '@aurelia-toolbelt/bootstrap-core';
 
 @customElement({ name: 'at-alert', template })
 export class BootstrapAlert {
+    /*
+    DOES NOT WORK!
     constructor(@IBootstrapOptions options: IBootstrapOptions) {
         console.log(options); // log twice!!!
     }
+    */
 }
