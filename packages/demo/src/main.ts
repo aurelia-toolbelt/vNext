@@ -10,7 +10,7 @@ import { MyApp } from './my-app';
 
 import * as BootstrapV4Components from '@aurelia-toolbelt/bootstrap-v4';
 
-import { BootstrapV4Configuration } from '@aurelia-toolbelt/bootstrap-core';
+// import { BootstrapV4Configuration } from '@aurelia-toolbelt/bootstrap-core';
 
 Aurelia
   /*
@@ -19,8 +19,12 @@ Aurelia
     sharedStyles: [shared]
   }))
   */
-  .register(RouterConfiguration, BootstrapV4Components, JitHtmlBrowserConfiguration,
-    BootstrapV4Configuration.customize({ enableRippleEffect: true }))
+  .register(RouterConfiguration, BootstrapV4Components,
+    /*
+    JitHtmlBrowserConfiguration,
+    BootstrapV4Configuration.customize({ enableRippleEffect: true })
+    */
+  )
   // To use HTML5 pushState routes, replace previous line with the following
   // customized router config.
   // .register(RouterConfiguration.customize({ useUrlFragmentHash: false }))
