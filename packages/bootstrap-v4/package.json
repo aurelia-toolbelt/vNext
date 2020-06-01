@@ -10,6 +10,7 @@
   "dependencies": {
     "aurelia": "dev",
     "@aurelia-toolbelt/bootstrap-v4-core": "0.1.0",
+    "@aurelia-toolbelt/custom-attributes": "0.1.0",
     "bootstrap": "4.5.0",
     "jquery": "3.5.1"
   },

@@ -99,7 +99,7 @@ module.exports = function(env, { runTest, analyze }) {
               // If you turn on "closed" mode, there will be difficulty to perform e2e
               // tests (such as Cypress). Because shadowRoot is not accessible through
               // standard DOM APIs in "closed" mode.
-              defaultShadowOptions: { mode: 'open' }
+              defaultShadowOptions: { mode: null }
             }
           },
           exclude: /node_modules/

@@ -1,13 +1,11 @@
 import { customElement } from "aurelia";
-import * as viewDef from './at-alert.html';
-// import { IBootstrapOptions } from '@aurelia-toolbelt/bootstrap-v4-core';
+import template from './at-alert.html';
+import { IBootstrapV4Options } from '@aurelia-toolbelt/bootstrap-v4-core';
 
-@customElement({ name: 'at-alert', ...viewDef })
+@customElement({ template, name: 'at-alert' })
 export class BootstrapAlert {
-    /*
-    DOES NOT WORK!
-    constructor(@IBootstrapOptions options: IBootstrapOptions) {
-        console.log(options); // log twice!!!
+    constructor(@IBootstrapV4Options options: IBootstrapV4Options) {
+        console.log(options);
     }
-    */
+
 }
