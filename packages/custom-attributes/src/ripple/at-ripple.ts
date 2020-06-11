@@ -7,7 +7,6 @@ export class RippleCustomAttribute {
     constructor(private element: Element) {
     }
     afterAttach() {
-        console.log("Ripple effect");
         let htmlElement = this.element as HTMLElement;
         htmlElement.setAttribute('data-animation', 'ripple');
         htmlElement.addEventListener('mousedown', function (e) {
