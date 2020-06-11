@@ -20,7 +20,7 @@ const defaultV4Options: IBootstrapV4Options = {
     }
 };
 
-export const IBootstrapV4Options = DI.createInterface<IBootstrapV4Options>('IBootstrapOptions').noDefault();
+export const IBootstrapV4Options = DI.createInterface<IBootstrapV4Options>('IBootstrapV4Options').noDefault();
 
 export const BootstrapV4Configuration = {
     customize(options: IBootstrapV4Options) {
