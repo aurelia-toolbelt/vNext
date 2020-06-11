@@ -21,7 +21,7 @@ export class RippleCustomAttribute {
             ripple.style.setProperty('--scale', w);
             this.appendChild(ripple);
             setTimeout(() => {
-                ripple.parentNode.removeChild(ripple);
+                ripple.remove();
             }, 500);
         })
     }
