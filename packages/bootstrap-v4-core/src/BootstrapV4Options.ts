@@ -8,9 +8,9 @@ export interface IBootstrapV4Options {
     defaultSize?: BootstrapSize;
     enableLogging?: boolean;
     inputOptions?: IBootstrapV4InputOptions;
-};
+}
 
-const defaultV4Options: IBootstrapV4Options = {
+const defaultBootstrapV4Options: IBootstrapV4Options = {
     enableRippleEffect: false,
     enableCssReboot: false,
     enableLogging: false,
@@ -26,7 +26,7 @@ export const BootstrapV4Configuration = {
     customize(options: IBootstrapV4Options) {
         return {
             register(container: IContainer) {
-                const settings = { ...defaultV4Options, ...options };
+                const settings = { ...defaultBootstrapV4Options, ...options };
                 return container.register(Registration.instance(IBootstrapV4Options, settings));
             },
         };
