@@ -5,6 +5,7 @@ import * as css from './at-ripple.css'
 @inject(Element)
 export class RippleCustomAttribute {
     constructor(private element: Element) {
+        css;
     }
     afterAttach() {
         let htmlElement = this.element as HTMLElement;
