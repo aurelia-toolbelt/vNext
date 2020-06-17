@@ -1,11 +1,11 @@
 import { customAttribute, inject } from "aurelia";
-import * as css from './at-ripple.css'
+import * as cssRipple from './at-ripple.css';
 
 @customAttribute({ name: 'at-ripple'})
 @inject(Element)
 export class RippleCustomAttribute {
     constructor(private element: Element) {
-        css;
+        cssRipple;
     }
     afterAttach() {
         let htmlElement = this.element as HTMLElement;
