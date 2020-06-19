@@ -11,6 +11,10 @@
     "resolveJsonModule": true
   },
   "include": [
+    "test",
     "src"
+  ],
+  "files": [
+    "src/resource.d.ts"
   ]
 }
