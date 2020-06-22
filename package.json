@@ -4,4 +4,8 @@
   "devDependencies": {
     "lerna": "^3.16.4"
   }
+  ,
+  "scripts": {
+    "start": "lerna run start --scope demo"
+  }
 }

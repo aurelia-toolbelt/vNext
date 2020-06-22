@@ -1,37 +1,36 @@
-import { customElement, inject, INode } from "aurelia";
+import { customElement, inject, INode, containerless } from "aurelia";
 import template from './at-button.html';
 import { IBootstrapV5Options } from "@aurelia-toolbelt/bootstrap-v5-core";
 import { RippleCustomAttribute } from '@aurelia-toolbelt/custom-attributes';
-import { inherits } from "util";
 
-
-export class BaseBootstrapComponent{
+export class BaseBootstrapComponent {
     constructor(
-        @INode element:Element,
-        @IBootstrapV5Options options: IBootstrapV5Options) {    
+        @INode element: Element,
+        @IBootstrapV5Options options: IBootstrapV5Options) {
     }
 }
 
-export class RippleEffectComponent extends BaseBootstrapComponent{
+export class RippleEffectComponent extends BaseBootstrapComponent {
     constructor(
-        @INode element:Element,
+        @INode element: Element,
         @IBootstrapV5Options options: IBootstrapV5Options) {
-
         super(element, options);
-
         if (options.enableRippleEffect) {
-            element.setAttribute("at-ripple","");
         }
     }
- }
-
+}
 
 @customElement({ name: 'at-button', template, dependencies: [RippleCustomAttribute] })
+@containerless
 export class BootstrapButton extends RippleEffectComponent {
     constructor(
-        @INode element:Element,
-        @IBootstrapV5Options options: IBootstrapV5Options) {
-
+        @INode private element: Element,
+        @IBootstrapV5Options private options: IBootstrapV5Options) {
         super(element, options);
+    }
+    
+    afterAttach()
+    {
+        console.log(this.element); // Call Twice & `<!-- au-end -->`
     }
 }
