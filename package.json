@@ -6,6 +6,6 @@
   }
   ,
   "scripts": {
-    "start": "lerna run start --scope demo"
+    "start": "lerna run start --stream --scope demo"
   }
 }
