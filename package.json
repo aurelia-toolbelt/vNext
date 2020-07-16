@@ -1,7 +1,11 @@
 {
-  "name": "root",
+  "name": "aurelia-toolbelt",
   "private": true,
   "devDependencies": {
     "lerna": "^3.16.4"
+  }
+  ,
+  "scripts": {
+    "start": "lerna run start --stream --scope demo"
   }
 }
