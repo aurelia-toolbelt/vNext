@@ -1,4 +1,4 @@
-export enum BootstrapV5Container {
+export enum Container {
     Default = 'container',
     Small = 'container-sm',
     Medium = 'container-md',

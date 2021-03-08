@@ -1,11 +1,10 @@
 {
-  "name": "aurelia-toolbelt",
+  "name": "@aurelia-toolbelt",
   "private": true,
-  "devDependencies": {
-    "lerna": "^3.16.4"
-  }
-  ,
+  "workspaces": [
+    "packages/**"
+  ],
   "scripts": {
-    "start": "lerna run start --stream --scope demo"
+    "start": "npm run --prefix packages/demo start"
   }
 }

@@ -1,4 +1,4 @@
-export enum BootstrapVariant {
+export enum Variant {
     Primary = 'primary',
     Secondary = 'secondary',
     Success = 'success',

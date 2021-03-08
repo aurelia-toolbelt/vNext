@@ -1,4 +1,4 @@
-# bootstrap-v5
+# bootstrap-v5-core
 
 This project is bootstrapped by [aurelia/new](https://github.com/aurelia/new).
 
@@ -35,7 +35,7 @@ Unit tests run in browser through [browser-do](https://github.com/3cp/browser-do
 
 By default, browser-do shuts down browser after tests. To keep browser window open for inspection, pass additional argument `-k` or `--keep-open`.
 
-    npm run build:test && browser-do -k --mocha --browser chrome < dist/entry-bundle.js
+    npm run build:test && browser-do -k --mocha --browser chrome < dist/entry.bundle.js
 
 Unit tests in watch mode is executed through stand webpack watch mode and the help of [webpack-shell-plugin-next](https://github.com/s00d/webpack-shell-plugin-next).
 

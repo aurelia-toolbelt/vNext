@@ -13,8 +13,5 @@
   "include": [
     "test",
     "src"
-  ],
-  "files": [
-    "src/resource.d.ts"
   ]
 }

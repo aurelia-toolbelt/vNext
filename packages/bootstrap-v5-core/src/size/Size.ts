@@ -1,4 +1,4 @@
-export enum BootstrapSize {
+export enum Size {
     ExtraSmall = 'xs',
     Small = 'sm',
     Medium = 'md',

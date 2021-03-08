@@ -1,4 +1,4 @@
-export enum BootstrapTextVariant {
+export enum TextVariant {
     Primary = 'text-primary',
     Secondary = 'text-secondary',
     Success = 'text-success',

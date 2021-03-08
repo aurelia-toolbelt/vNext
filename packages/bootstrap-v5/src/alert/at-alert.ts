@@ -7,5 +7,4 @@ export class BootstrapAlert {
     constructor(@IBootstrapV5Options options: IBootstrapV5Options) {
         console.log(options);
     }
-
 }
