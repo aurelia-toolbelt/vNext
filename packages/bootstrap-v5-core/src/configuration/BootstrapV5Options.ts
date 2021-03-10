@@ -1,6 +1,6 @@
 import { IContainer } from '@aurelia/kernel';
 import { AppTask, DI, Registration } from 'aurelia';
-import { Size } from "../size/Size";
+import { Size } from '../bootstrap/Size';
 import { IInputOptions } from './InputOptions';
 
 export interface IBootstrapV5Options {

@@ -13,6 +13,7 @@ export function truthyRecognizer(htmlElement: HTMLElement, prop: object): boolea
 }
 
 export function truthyDetector(value: unknown) {
+    console.log(value); // HERE
     const isBoolean =
         value === true ||
         value === false ||
@@ -21,7 +22,8 @@ export function truthyDetector(value: unknown) {
     if (!isBoolean && !isString) {
         throw "The custom attribute's type must be 'boolean' or 'string'.";
     } else {
-        switch (value) {
+        switch (value) {            
+            case '': return true;
             case 'true': return true;
             case 'false': return false;
             // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
