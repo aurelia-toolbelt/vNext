@@ -4,3 +4,4 @@ export * from './configuration/BootstrapV5Options';
 export * from './bootstrap/Size';
 export * from './configuration/InputOptions';
 export * from './html/ButtonType';
+export * from './html/BooleanString'

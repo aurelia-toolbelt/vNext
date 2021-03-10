@@ -1,7 +1,7 @@
 import { customElement, INode, containerless, bindable, BindingMode } from "aurelia";
 import template from "./at-button.html";
-import { ButtonType, IBootstrapV5Options, Size, Variant } from "@aurelia-toolbelt/bootstrap-v5-core";
-import { applyRippleEffect, truthyDetector, truthyRecognizer } from "@aurelia-toolbelt/core";
+import { BooleanString, ButtonType, IBootstrapV5Options, Size, Variant } from "@aurelia-toolbelt/bootstrap-v5-core";
+import { applyRippleEffect, truthyDetector } from "@aurelia-toolbelt/core";
 
 @customElement({ name: "at-button", template })
 @containerless()
@@ -12,8 +12,8 @@ export class BootstrapButton {
   @bindable({ mode: BindingMode.toView }) public variant: Variant = Variant.Primary;
   @bindable({ mode: BindingMode.toView }) public disabled: boolean = false;
   @bindable({ mode: BindingMode.toView }) public id: string;
-  @bindable({ set: v => truthyDetector(v), mode: BindingMode.toView }) public outline: boolean | string = false;
-  @bindable({ set: v => truthyDetector(v), mode: BindingMode.toView }) public block: boolean | string = false;
+  @bindable({ mode: BindingMode.toView }) public outline: BooleanString = false;
+  @bindable({ set: truthyDetector, mode: BindingMode.toView }) public block: BooleanString = false;
 
   constructor(
     @INode private element: Element,
@@ -22,7 +22,6 @@ export class BootstrapButton {
   }
 
   attached() {
-    // this.block = truthyRecognizer(this.element as HTMLElement, { block: this.block });
     this.applyRipple();
     this.applySize();
   }
