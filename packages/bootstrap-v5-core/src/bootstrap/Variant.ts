@@ -9,4 +9,3 @@ export enum Variant {
     Dark = 'dark'
 }
 
-

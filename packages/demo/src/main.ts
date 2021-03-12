@@ -21,6 +21,7 @@ Aurelia
     enableRippleEffect: true,
     defaultSize: Size.Small
   }))
+  //.register(BootstrapV5Configuration)
   .register(RouterConfiguration)
   // To use HTML5 pushState routes, replace previous line with the following
   // customized router config.
